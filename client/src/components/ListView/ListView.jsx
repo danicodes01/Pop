@@ -63,6 +63,7 @@ const Search = styled.button`
 const Wrap = styled.div`
 margin-left: 100px;
 `
+//comment 
 const ListView= ({ merchData, selectMerchant, userSubs, setUserSubs }) => {
   const [ openPopsView, setOpenPopsView ] = useState(true);
   const [ yourSubsView, setYourSubsView ] = useState(false);
@@ -74,9 +75,11 @@ const ListView= ({ merchData, selectMerchant, userSubs, setUserSubs }) => {
   const [ search, setSearch ] = useState('')
   const { t, i18n } = useTranslation();
   const { name } = merchData[0];
+ 
 const updateSearch = (e) => {
   setSearch(e.target.value.substr(0, 40))
 }
+
   return (
     <div>
 <BtnWrapper>

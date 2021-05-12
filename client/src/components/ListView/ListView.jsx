@@ -152,7 +152,7 @@ null
         :
   
         <div>
-          <ul>
+          
         {merchData.filter(merch => merch.name.toLowerCase().indexOf(search) !== -1
         || merch.info.toLowerCase().indexOf(search) !== -1)
         .map(merch => {
@@ -162,7 +162,7 @@ null
             selectMerchant={selectMerchant}/>
           })
         }
-        </ul>
+        
         </div>
         
       }

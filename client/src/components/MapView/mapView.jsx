@@ -87,7 +87,6 @@ const Map = ({ merchData, merchant, selectMerchant, currentLocMarker, setCurrent
     }
   }
 
-// console.log(t("touch"))
   return (
     <div>
       {isLocater ? null : <Div>{t("touchMap")}</Div>}

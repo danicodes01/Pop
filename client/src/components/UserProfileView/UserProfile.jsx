@@ -15,14 +15,12 @@ margin: 53px 0 6px ;
 const UserProfile = ({ user }) => {
   const [editWindowOpen, setEditWindowOpen] = useState(false);
   const {t} = useTranslation()
-  
+console.log(user)
   return (
     <div>
       <h1>{t("userProfileTxt")}</h1>
       <hr/>
       <Div2></Div2>
-      {console.log(user)}
-      {/* useEffect(() => merchant ? setCoord() : null, [merchant]); */}
       <img src={user.picture}/>
       <br/>
       <br/>

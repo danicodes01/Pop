@@ -75,9 +75,9 @@
 	"cancel?" : "Cancelar?",
 	"loginBtn" : "Entrar", 
 	"choosefileBtn" : "Elija el archivo", 
-	"upoadTxt" : "Subir",
+	"upoadTxt" : "Subir fotos",
 	"close2" : "Cierra",
 	"toSeelocTxt" : "para ver tu ubicación en el mapa",
-	"uploadFotoBtn" : "Subir foto"
+	"uploadFotoBtn" : "Editar fotos"
 	
 }

@@ -48,6 +48,7 @@ const updateSearch = (e) => {
       onClick={() => {
         setInputView(false)
         setOpenPopsView(true)
+        setSearchPopsView(false)
       }}>{t('openNowBtn')}</button>
       <button
        inputView={inputView}

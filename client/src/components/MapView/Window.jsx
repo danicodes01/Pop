@@ -7,7 +7,7 @@ const Img = styled.img`
 display: block;
 margin-left: auto;
 margin-right: auto;
-margin-bottom: 3px;
+margin-bottom: 6px;
 width: 25%;
 
 `

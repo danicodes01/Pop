@@ -34,7 +34,7 @@ const Menu = ({ merchant, selectMerchant }) => {
 
   return (
     <div>
-        <H22>{`${t("productsTxt")}:`} </H22>
+        <H22>{`${t("productsTxt")}`} </H22>
         {products.map(product =>
           <H3>&emsp; &#8226; &nbsp;<b>{product.name}</b><small>(<i>${parseFloat(product.price).toFixed(2)}</i></small>)</H3>
         )}

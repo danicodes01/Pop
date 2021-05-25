@@ -74,7 +74,7 @@ app.get('/logout', (req, res) => {
 });
 
 app.get('/login', (req, res) => {
-  res.send('<a href="/google"> Login </a>');
+  res.send('<html style="margin: 0px; padding: 0px;"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Pop^</title><body style="background-color:f5abc9; text-align: center; height: 100vh;"><a href="/google"><img style: "height=45vh; width=60%;" src="/assets/popup.png"></img></a><br><a href="/google"> <h1>Click To Login</h1> </a></body></html>');
 })
 
 //check to see if user is logged in

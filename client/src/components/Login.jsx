@@ -15,7 +15,7 @@ const Login = ({}) => {
       }}
     >
 
-          <img src={popUpLogo} ></img>
+          <a href="/google"><img src={popUpLogo} ></img></a>
           <div>A handy app for finding pop-ups in your area, or any area!</div>
           <button ><a color="white" href="/google"> {t("loginBtn")} </a></button>
 

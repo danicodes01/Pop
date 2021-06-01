@@ -25,7 +25,7 @@ export default createGlobalStyle`
   h1{
     margin-top: 30px;
     font-family: 'Londrina Solid', cursive;
-    color: #f5abc9;
+    color: ${props => props.theme.mode === 'dark' ? '#D09C5A' : '#f5abc9'};
     text-align: center;
     margin-bottom: .5rem;
   }

@@ -33,7 +33,7 @@ const H22 = styled.h1`
 
 margin-top: 15px;
 margin-bottom: 0px;
-color:#f5abc9;
+color: ${props => props.theme.mode === 'dark' ? '#D09C5A' : '#f5abc9'};
 font-size: 1.5rem;
 
 `

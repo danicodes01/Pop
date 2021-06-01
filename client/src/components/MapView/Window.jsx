@@ -13,7 +13,7 @@ width: 25%;
 `
 
 const H2 = styled.h2`
-  color: #f5abc9;
+  color: ${props => props.theme.mode === 'dark' ? '#D09C5A' : '#f5abc9'};
 
 `
 const Div = styled.div`

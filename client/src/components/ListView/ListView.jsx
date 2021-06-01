@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import { useTranslation } from 'react-i18next'
 
 const Ul = styled.ul`
-background-color: ${props => props.theme.mode === 'dark' ? '#803452' : '##f5abc9'};
+background-color: ${props => props.theme.mode === 'dark' ? '#7392C4' : '##f5abc9'};
 
 
 `
@@ -18,11 +18,11 @@ const Div2 = styled.div`
 margin: 16px 50px;
 `
 const Div3 = styled.ul`
-background-color: ${props => props.theme.mode === 'dark' ? '#803452' : '#f5abc9'};
+background-color: ${props => props.theme.mode === 'dark' ? '#7392C4' : '#f5abc9'};
 
 `
 const Div4 = styled.ul`
-background-color: ${props => props.theme.mode === 'dark' ? '#803452' : '#f5abc9'};
+background-color: ${props => props.theme.mode === 'dark' ? '#7392C4' : '#f5abc9'};
 
 `
 

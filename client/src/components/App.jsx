@@ -41,6 +41,7 @@ import GlobalStyles from './styles/globalStyles.js'
 const H1 = styled.h1`
 font-size: 2.5rem;
 margin: 60px;
+color: ${props => props.theme.mode === 'dark' ? '#D09C5A'  : '#f5abc9'};
 `
 
 

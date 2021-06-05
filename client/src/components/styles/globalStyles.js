@@ -1,4 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components';
+import nightTruck from '../assets/nightTruck.jpeg'
+import pokadot from '../assets/pokadot.jpeg'
+
 export default createGlobalStyle`
 
   * {
@@ -9,6 +12,12 @@ export default createGlobalStyle`
     font-family: 'Ubuntu';
     background-color: ${props => props.theme.mode === 'dark' ? 'rgba(50,60,75,1)' : '#fff'};
     color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
+    background-image: ${props => props.theme.mode === 'dark' ? `url(${nightTruck})` : `url(${pokadot})`};
+    background-position: center top;
+    background-size: contain;
+    background-size: 125%;
+    background-repeat: no-repeat;
+ 
   }
   nav {
     position: absolute;

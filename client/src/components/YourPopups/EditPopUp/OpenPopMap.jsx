@@ -30,6 +30,10 @@ const options = {
   gestureHandling: 'greedy'
 }
 
+const Button = styled.button`
+margin-top: 30px;
+`
+
 const OpenPopupMap = ({ merchData, selectMerchant,
   currentLocMarker, setCurrentLocMarker, merchant,
   setMerchData, user,
@@ -103,9 +107,9 @@ const OpenPopupMap = ({ merchData, selectMerchant,
         setSubs={setSubs}
       />
       <br/>
-      <button onClick={() => {
+      <Button onClick={() => {
         setCancelConfirm(true);
-      }}>{t("cancelBtn")}</button>
+      }}>{t("cancelBtn")}</Button>
       {
         cancelConfirm ?
         <Confirmation
@@ -115,7 +119,7 @@ const OpenPopupMap = ({ merchData, selectMerchant,
         /> :
         ''
       }
-        <div>{t("touchMap")}</div>
+        <h4>{t("touchMap")}</h4>
     <GoogleMap
       mapContainerStyle={mapContainerStyle}
       zoom={12}

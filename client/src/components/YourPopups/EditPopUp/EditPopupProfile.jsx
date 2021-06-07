@@ -7,8 +7,17 @@ import UploadPic from './UploadPic.jsx';
 import ToggleOpenClose from '../../ToggleOpenClose.jsx'
 import { useTranslation } from 'react-i18next'
 
+const Button = styled.button`
+margin-top: 0px;
+`
+
 const Div = styled.div`
-margin-top: 30px;
+margin-top: 30px; 
+`
+const H1 = styled.h1`
+margin-top: 40px;
+margin-bottom: 0px;
+text-shadow: 2px 2px 4px #000000;
 `
 const EditPopupProfile = ({ merchant, selectMerchant, merchData, setMerchData }) => {
   const [ openOrClosed, setOpenOrClosed] = useState('');
@@ -50,14 +59,14 @@ const EditPopupProfile = ({ merchant, selectMerchant, merchData, setMerchData })
 
   return (
     <Div >
-      <Link to='/yourpopups'>
-       <button>{t("backBtn")}</button>
-      </Link>
       <div className='controlPanel'>
-        <h1>{t("controlpaneltxt")}</h1>
+        <H1>{t("controlpaneltxt")}</H1>
         <br/>
         <hr/>
         <br/>
+      <Link to='/yourpopups'>
+       <Button>{t("backBtn")}</Button>
+      </Link>
         <Link to="/editinfo">
           <button>{t("editInfoBtn")}</button>
         </Link>

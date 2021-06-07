@@ -68,6 +68,7 @@ import pokadot from '../components/assets/pokadot.jpeg'
 const H1 = styled.h1`
 font-size: 2.5rem;
 margin: 60px;
+text-shadow: 2px 2px 4px #000000;
 color: ${props => props.theme.mode === 'dark' ? '#D09C5A'  : '#f5abc9'};
 `
 

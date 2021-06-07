@@ -14,7 +14,8 @@ import pokadot from '../assets/pokadot.jpeg'
 
 
 const Div = styled.div`
-
+color: white; 
+text-shadow: 2px 2px 4px #000000;
 margin: 30px 0 6px ;
 `
 

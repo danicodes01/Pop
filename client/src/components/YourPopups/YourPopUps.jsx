@@ -9,7 +9,10 @@ import { useTranslation } from 'react-i18next'
 const Ul = styled.ul`
 background-color: ${props => props.theme.mode === 'dark' ? '#7392C4' : '#f5abc9'};
 `
-
+const H1 = styled.h1`
+margin-top: 35px;
+text-shadow: 2px 2px 4px #000000;
+`
 const YourPopUps = ({ yourPopups, setYourPopups, merchData, setMerchData, merchant, selectMerch, userSubs, setUserSubs }) => {
   const {t} = useTranslation()
   
@@ -19,7 +22,8 @@ const YourPopUps = ({ yourPopups, setYourPopups, merchData, setMerchData, mercha
   ` 
   return (
     <div>
-      <h1>{t('yourPopUpsBtn')}</h1>
+      <br/> 
+      <H1>{t('yourPopUpsBtn')}</H1>
       <hr/>
       <Div></Div>
       <Link to='/create'>

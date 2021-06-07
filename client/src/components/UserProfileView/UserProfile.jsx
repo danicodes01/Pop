@@ -11,14 +11,17 @@ const Div = styled.div`
 
 margin: 53px 0 6px ;
 `
-
+const H1 = styled.h1`
+margin-top: 53px;
+text-shadow: 2px 2px 4px #000000;
+`
 const UserProfile = ({ user }) => {
   const [editWindowOpen, setEditWindowOpen] = useState(false);
   const {t} = useTranslation()
 console.log(user)
   return (
     <div>
-      <h1>{t("userProfileTxt")}</h1>
+      <H1>{t("userProfileTxt")}</H1>
       <hr/>
       <Div2></Div2>
       <img src={user.picture}/>

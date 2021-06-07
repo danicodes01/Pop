@@ -15,6 +15,10 @@ const Div = styled.div`
 margin-top: 1px;
 
 `
+const H1 = styled.h1`
+margin-top: 50px;
+text-shadow: 2px 2px 4px #000000;
+`
 
 const EditInfo = ({ merchant, selectMerchant, yourPopups, setYourPopups, userSubs, setUserSubs, merchData, setMerchData }) => {
   //console.log(merchant.info);
@@ -65,7 +69,7 @@ const EditInfo = ({ merchant, selectMerchant, yourPopups, setYourPopups, userSub
   return (
   <div>
     <div>
-      <h1> {t("editTxt")} {`${merchant.name}'s info`}</h1>
+      <H1> {t("editTxt")} {`${merchant.name}'s info`}</H1>
       <hr/>
       <br/>
       <input value={text} onChange={(e) => setText(e.target.value) }></input>

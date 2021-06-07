@@ -10,10 +10,35 @@ import Window from '../MapView/Window.jsx'
 import styled, { css } from 'styled-components'
 import { useTranslation } from 'react-i18next'
 
-const Div = styled.div`
 
+
+const Div = styled.div`
+color: white; 
+text-shadow: 2px 2px 4px #000000;
 margin: 30px 0 6px ;
 `
+
+// const Background = styled.div`
+//     background-image: ${props => props.theme.mode === 'dark' ? `url(${nightTruck})` : `url(${pokadot})`};
+//     background-position: center top;
+//     background-size: contain;
+//     background-size: 125%;
+//     background-repeat: no-repeat;
+// `
+
+// const Content = styled.div`
+//     border: 1px solid #000;
+//     background-image: ${props => props.theme.mode === 'dark' ? `url(${nightTruck})` : `url(${pokadot})`};
+//     position: absolute;
+//     margin-top: -239px;
+//     background-size: 400px;
+//     width: 400px;
+//     height: 400px;
+//     opacity: .50;
+   
+//     background-repeat: no-repeat;
+// `
+
 
 const mapContainerStyle = {
     width: '100vw',
@@ -167,6 +192,7 @@ const Map = ({ merchData, merchant, selectMerchant, currentLocMarker, setCurrent
           </InfoWindow>
         )
       }
+   
     </GoogleMap>
     </div>
   );

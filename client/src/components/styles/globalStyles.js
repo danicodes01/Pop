@@ -1,4 +1,9 @@
 import { createGlobalStyle, css } from 'styled-components';
+import nightTru from '../assets/nightTru.jpg'
+import bar from '../assets/barpop.jpg'
+import mercado from '../assets/mercadod.png'
+
+
 export default createGlobalStyle`
 
   * {
@@ -9,6 +14,12 @@ export default createGlobalStyle`
     font-family: 'Ubuntu';
     background-color: ${props => props.theme.mode === 'dark' ? 'rgba(50,60,75,1)' : '#fff'};
     color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
+    background-image: ${props => props.theme.mode === 'dark' ? `url(${nightTru})` : `url(${bar})`};
+    background-position: center top;
+    background-size: contain;
+    background-size: 125%;
+    background-repeat: no-repeat;
+ 
   }
   nav {
     position: absolute;
@@ -25,19 +36,25 @@ export default createGlobalStyle`
   h1{
     margin-top: 30px;
     font-family: 'Londrina Solid', cursive;
-    color: #f5abc9;
+    color: ${props => props.theme.mode === 'dark' ? '#D09C5A' : '#f5abc9'};
     text-align: center;
     margin-bottom: .5rem;
   }
   h2 {
 
   }
+
+  h4{
+    color:  #fff;
+    text-shadow: 2px 2px 4px #000000;
+  }
   h6 {
+    color:  #fff;
+    text-shadow: 2px 2px 4px #000000;
     margin-top: 30px;
-    margin-bottom: 0;
   }
   hr {
-    border: 1px solid lightgray;
+    border: 1px solid ${props => props.theme.mode === 'dark' ? '#D09C5A' : '#f5abc9'};
     border-radius: 1px;
     width: 75%;
     margin-left: auto;
@@ -72,7 +89,7 @@ export default createGlobalStyle`
     :active {
         opacity: .5;
         color: black;
-        background-color: ${props => props.theme.mode === 'dark' ? '#f5abc9' : '#f5abc9'};
+        background-color: ${props => props.theme.mode === 'dark' ? '#D09C5A' : '#f5abc9'};
         padding: 6.25px 16.25px
     }
 

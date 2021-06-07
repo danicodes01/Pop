@@ -9,6 +9,10 @@ margin-top: 30px;
 const Div2 = styled.div`
 margin-top: 60px;
 `
+const H1 = styled.h1`
+margin-top: 50px;
+text-shadow: 2px 2px 4px #000000;
+`
 
 const EditOwner = ({ merchant, selectMerchant, user, setUser }) => {
   const [owners, setOwners] = useState([]);
@@ -87,7 +91,7 @@ const EditOwner = ({ merchant, selectMerchant, user, setUser }) => {
 
   return (
   <Div>
-    <h1>{t("addOwnerTxt")}</h1>
+    <H1>{t("addOwnerTxt")}</H1>
     <hr/>
     <br/>
     <label>{t("EnterEmailTxt")}: </label>
@@ -95,9 +99,10 @@ const EditOwner = ({ merchant, selectMerchant, user, setUser }) => {
     <button onClick={() => addOwner()}>{t("addBtn")}</button>
     <Div2></Div2>
     <h4>{t("currentOnersTxt")}: </h4>
+    <br/>
     {owners.map(owner =>
       <div key={owner.id}>
-        <h6>{owner.name}</h6>
+        <h4>{owner.name}</h4>
         {owners.length > 1
           ? (<button onClick={()=> {removeOwner(owner.email)}}><small>x</small></button>)
           : null

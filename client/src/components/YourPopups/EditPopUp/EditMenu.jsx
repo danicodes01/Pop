@@ -12,6 +12,13 @@ margin-top: 15px;
 color:#f5abc9;
 font-size: 1.5rem;
 `
+const H1 = styled.h1`
+margin-top: 53px;
+text-shadow: 2px 2px 4px #000000;
+`
+const H5 = styled.h4`
+margin-top: 15px;
+`
 const EditMenu = ({ merchant, selectMerchant }) => {
   const {t} = useTranslation()
   console.log('hello from edit menu');
@@ -71,7 +78,7 @@ const EditMenu = ({ merchant, selectMerchant }) => {
   return(
     <Div>
       <div>
-        <h1>{`${merchant.name}'s ${t("products2Txt")}`} </h1>
+        <H1>{`${merchant.name}'s ${t("products2Txt")}`} </H1>
         <hr/>
         {products.map(product =>
           <p>&emsp; &#8226; &nbsp;<b>{product.name}</b><small>(<i>${parseFloat(product.price).toFixed(2)}</i></small>)
@@ -82,7 +89,7 @@ const EditMenu = ({ merchant, selectMerchant }) => {
       </div>
       <div>
         <form>
-          <h5>{t("addaProductTxt")}:</h5>
+          <H5>{t("addaProductTxt")}</H5>
           <br/>
           <label><b>{t("productNameTxt")}:</b></label>
           <input type="text" value={nameText} onChange={(e) => setNameText(e.target.value)}></input><br></br>

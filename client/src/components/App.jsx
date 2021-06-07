@@ -36,11 +36,39 @@ import GlobalStyles from './styles/globalStyles.js'
 
 /*=============================== Styled Components ===============================*/
 
+// const Background = styled.div`
+//     background-image: ${props => props.theme.mode === 'dark' ? `url(${nightTruck})` : `url(${pokadot})`};
+//     background-position: center top;
+//     background-size: contain;
+//     background-size: 125%;
+//     background-repeat: no-repeat;
+// `
+// const Content = styled.div`
+//     border: 1px solid #000;
+//     background-image: ${props => props.theme.mode === 'dark' ? `url(${nightTruck})` : `url(${pokadot})`};
+//     width: 300px;
+//     height: 300px;
+// `
+
+// const Content = styled.div`
+//     border: 1px solid #000;
+//     background-image: ${props => props.theme.mode === 'dark' ? `url(${nightTruck})` : `url(${pokadot})`};
+//     position: absolute;
+//     margin-top: -239px;
+//     background-size: 400px;
+//     width: 400px;
+//     height: 400px;
+//     opacity: .50;
+   
+//     background-repeat: no-repeat;
+// `
 
 
 const H1 = styled.h1`
 font-size: 2.5rem;
 margin: 60px;
+text-shadow: 2px 2px 4px #000000;
+color: ${props => props.theme.mode === 'dark' ? '#D09C5A'  : '#f5abc9'};
 `
 
 
@@ -123,7 +151,7 @@ const App = () => {
     >
       <GlobalStyles
       />
-      
+      {/* <Content> */}
       <Router>
         {isLogged === true ? <Redirect to="/" /> : <Redirect to="/login" />}
         <Switch>
@@ -168,6 +196,7 @@ const App = () => {
           />
         </Switch>
       </Router>
+      {/* </Content> */}
     </ThemeProvider>
   )
 };
@@ -230,6 +259,7 @@ useEffect(() => {
     return (
 
       <Well>
+        
           {/* <LogOutBtn href="/logout"> Logout </LogOutBtn> */}
             <div className='sidebar-view'>
             <Burger

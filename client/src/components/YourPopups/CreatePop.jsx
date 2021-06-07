@@ -62,7 +62,7 @@ const CreatePop = ({ user, setUser, yourPopups, setYourPopups, currentLocMarker,
 
       <div>
         <Div></Div>
-        <h6>{t("businessNameTxt")}</h6>
+        <h3>{t("businessNameTxt")}</h3>
         { nameTakenBool ? <h5 className='issue'>{`${businessName} is already taken!`}</h5> : ''}
         <input onChange={(e) => {
           setNameTakenBool(false);
@@ -70,7 +70,7 @@ const CreatePop = ({ user, setUser, yourPopups, setYourPopups, currentLocMarker,
           setBusinessName(e.target.value);
           }}></input>
          <Div2></Div2>
-        <h6>{t("categoryTxt")}</h6>
+        <h3>{t("categoryTxt")}</h3>
 
         {
         pickCategoryBool ?
@@ -88,7 +88,7 @@ const CreatePop = ({ user, setUser, yourPopups, setYourPopups, currentLocMarker,
           <option value={'produce'}>{t("markettxt")}</option>
         </select>
         <Div2></Div2>
-        <h6>{t("infoTxt")}</h6>
+        <h3>{t("infoTxt")}</h3>
         <form onSubmit={(e) => {
           e.preventDefault();
 

@@ -7,7 +7,10 @@ import axios from 'axios';
 
 
 
-
+const H1 = styled.h1`
+margin-top: 35px;
+text-shadow: 2px 2px 4px #000000;
+`
 
 const EnglishBtn = styled.button`
   background-color: white;
@@ -56,7 +59,7 @@ const Settings = ({ user, setUser, theme, setTheme }) => {
 
     <div>
       <br/>
-      <h1>{t("settingsText")}</h1>
+      <H1>{t("settingsText")}</H1>
       <hr/>
       <br/>
       <Div></Div>

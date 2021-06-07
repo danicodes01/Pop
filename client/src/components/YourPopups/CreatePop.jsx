@@ -12,6 +12,24 @@ const Div2 = styled.div`
 margin-bottom: 60px;
 `
 
+const H3 = styled.h1`
+margin-top: 53px;
+text-shadow: 2px 2px 4px #000000;
+`
+const Buss = styled.h3`
+margin-top: 15px;
+
+`
+const Input = styled.input`
+margin-bottom: -14px;
+`
+const Cat = styled.h3`
+margin-bottom: 3px;
+`
+const Info = styled.h3`
+margin-top: -30px;
+`
+
 const CreatePop = ({ user, setUser, yourPopups, setYourPopups, currentLocMarker, setCurrentLocMarker, merchData, setMerchData }) => {
   const [ businessName, setBusinessName ] = useState('');
   const [ category, setCategory ] = useState();
@@ -62,15 +80,17 @@ const CreatePop = ({ user, setUser, yourPopups, setYourPopups, currentLocMarker,
 
       <div>
         <Div></Div>
-        <h3>{t("businessNameTxt")}</h3>
+        <H3>{t("createPopUpBtn")}</H3>
+        <hr/>
+        <Buss>{t("businessNameTxt")}</Buss>
         { nameTakenBool ? <h5 className='issue'>{`${businessName} is already taken!`}</h5> : ''}
-        <input onChange={(e) => {
+        <Input onChange={(e) => {
           setNameTakenBool(false);
           console.log(e.target.value);
           setBusinessName(e.target.value);
-          }}></input>
+          }}></Input>
          <Div2></Div2>
-        <h3>{t("categoryTxt")}</h3>
+        <Cat>{t("categoryTxt")}</Cat>
 
         {
         pickCategoryBool ?
@@ -88,7 +108,7 @@ const CreatePop = ({ user, setUser, yourPopups, setYourPopups, currentLocMarker,
           <option value={'produce'}>{t("markettxt")}</option>
         </select>
         <Div2></Div2>
-        <h3>{t("infoTxt")}</h3>
+        <Info>{t("infoTxt")}</Info>
         <form onSubmit={(e) => {
           e.preventDefault();
 

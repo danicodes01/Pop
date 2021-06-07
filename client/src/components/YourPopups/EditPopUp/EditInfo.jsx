@@ -16,7 +16,7 @@ margin-top: 1px;
 
 `
 const H1 = styled.h1`
-margin-top: 50px;
+margin-top: 53px;
 text-shadow: 2px 2px 4px #000000;
 `
 

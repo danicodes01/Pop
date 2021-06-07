@@ -61,7 +61,9 @@ const Slider = styled.span`
 		width: 28px;
 	}
 `
-
+const H4 = styled.h4`
+text-shadow: 2px 2px 4px #000000;
+`
 const ToggleOpenClose = ({ merchant, setOpenOrClosed,
 		openOrClosed, merchData,
 		setMerchData, selectMerchant,
@@ -138,7 +140,7 @@ const ToggleOpenClose = ({ merchant, setOpenOrClosed,
 			}}
 			/>
 			<Slider />
-			<p style={{fontFamily: 'Ubuntu', fontSize: '11px', marginTop: '3px'}}>{toggled ? `${t("openTxt")}` : `${t("closedTxt")}`}</p>
+			<H4>{toggled ? `${t("openTxt")}` : `${t("closedTxt")}`}</H4>
 		</InputWrapper>
 
 	)

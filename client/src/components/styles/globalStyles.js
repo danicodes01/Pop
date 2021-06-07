@@ -46,7 +46,6 @@ export default createGlobalStyle`
 
   h4{
     color:  #fff;
-    text-shadow: 2px 2px 4px #000000;
   }
   h6 {
     color:  #fff;

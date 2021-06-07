@@ -1,9 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components';
-import nightTruck from '../assets/nightTruck.jpeg'
-import pokadot from '../assets/pokadot.jpeg'
 import nightTru from '../assets/nightTru.jpg'
-import nutureTruck from '../assets/nutureTruck.jpg'
-import surf from '../assets/surfsupb.jpg'
+import bar from '../assets/barpop.jpg'
+import mercado from '../assets/mercadod.png'
 
 
 export default createGlobalStyle`
@@ -16,7 +14,7 @@ export default createGlobalStyle`
     font-family: 'Ubuntu';
     background-color: ${props => props.theme.mode === 'dark' ? 'rgba(50,60,75,1)' : '#fff'};
     color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
-    background-image: ${props => props.theme.mode === 'dark' ? `url(${nightTru})` : `url(${surf})`};
+    background-image: ${props => props.theme.mode === 'dark' ? `url(${nightTru})` : `url(${bar})`};
     background-position: center top;
     background-size: contain;
     background-size: 125%;

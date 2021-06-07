@@ -9,8 +9,7 @@ import {
 import Window from '../MapView/Window.jsx'
 import styled, { css } from 'styled-components'
 import { useTranslation } from 'react-i18next'
-import nightTruck from '../assets/nightTruck.jpeg'
-import pokadot from '../assets/pokadot.jpeg'
+
 
 
 const Div = styled.div`

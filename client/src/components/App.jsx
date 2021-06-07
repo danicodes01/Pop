@@ -27,8 +27,7 @@ import Picture from './MerchantProfileView/Picture.jsx';
 //import { ThemeProvider } from 'styled-components'
 import GlobalStyles from './styles/globalStyles.js'
 //import { overlap } from 'sequelize/types/lib/operators';
-import nightTruck from '../components/assets/nightTruck.jpeg'
-import pokadot from '../components/assets/pokadot.jpeg'
+
 
 // import * as butt from './openMerch.json';
 // const merchData = butt.merchants;

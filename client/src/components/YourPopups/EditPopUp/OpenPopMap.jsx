@@ -33,7 +33,9 @@ const options = {
 const Button = styled.button`
 margin-top: 30px;
 `
-
+const H4 = styled.h4`
+color: ${props => props.theme.mode === 'dark' ? '#fff' : 'black'};
+`
 const OpenPopupMap = ({ merchData, selectMerchant,
   currentLocMarker, setCurrentLocMarker, merchant,
   setMerchData, user,
@@ -119,7 +121,7 @@ const OpenPopupMap = ({ merchData, selectMerchant,
         /> :
         ''
       }
-        <h4>{t("touchMap")}</h4>
+        <H4>{t("touchMap")}</H4>
     <GoogleMap
       mapContainerStyle={mapContainerStyle}
       zoom={12}

@@ -15,7 +15,7 @@ const Div = styled.div`
 margin-top: 30px; 
 `
 const H1 = styled.h1`
-margin-top: 40px;
+margin-top: 43px;
 margin-bottom: 0px;
 text-shadow: 2px 2px 4px #000000;
 `

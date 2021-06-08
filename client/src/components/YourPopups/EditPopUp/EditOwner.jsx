@@ -10,7 +10,7 @@ const Div2 = styled.div`
 margin-top: 60px;
 `
 const H1 = styled.h1`
-margin-top: 50px;
+margin-top: 53px;
 text-shadow: 2px 2px 4px #000000;
 `
 
@@ -98,7 +98,7 @@ const EditOwner = ({ merchant, selectMerchant, user, setUser }) => {
     <input id="email" type="text" value={text} onChange={(e) => setText(e.target.value)}></input>
     <button onClick={() => addOwner()}>{t("addBtn")}</button>
     <Div2></Div2>
-    <h4>{t("currentOnersTxt")}: </h4>
+    <h3>{t("currentOnersTxt")}: </h3>
     <br/>
     {owners.map(owner =>
       <div key={owner.id}>

@@ -18,6 +18,7 @@ text-shadow: 2px 2px 4px #000000;
 `
 const H5 = styled.h4`
 margin-top: 15px;
+color: ${props => props.theme.mode === 'dark' ? '#fff' : 'black'};
 `
 const EditMenu = ({ merchant, selectMerchant }) => {
   const {t} = useTranslation()
